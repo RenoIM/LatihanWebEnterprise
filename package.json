@@ -1,0 +1,22 @@
+{
+  "name": "tb1webenterprise",
+  "version": "1.0.0",
+  "description": "Membuat biodata html dengan NPX vite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenoIM/LatihanWebEnterprise.git"
+  },
+  "author": "Reno Ikhmal Maulana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenoIM/LatihanWebEnterprise/issues"
+  },
+  "homepage": "https://github.com/RenoIM/LatihanWebEnterprise#readme",
+  "devDependencies": {
+    "vite": "^6.3.2"
+  }
+}
