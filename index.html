@@ -1,11 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata - Hologram Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background: radial-gradient(ellipse at center, #0f0f0f 0%, #000000 100%);
+        color: #00fff7;
+        overflow-x: hidden;
+      }
+  
+      .navbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        background: rgba(0, 255, 247, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #00fff7;
+      }
+  
+      .navbar a {
+        color: #00fff7;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+  
+      .navbar a:hover {
+        color: #ffffff;
+      }
+  
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        position: relative;
+      }
+  
+      .biodata-box {
+        background: rgba(0, 255, 247, 0.08);
+        border: 2px solid #00fff7;
+        box-shadow: 0 0 20px #00fff7;
+        padding: 40px;
+        border-radius: 16px;
+        width: 600px;
+        position: relative;
+      }
+  
+      .biodata-box h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px #00fff7;
+      }
+  
+      .biodata-box .item {
+        margin-bottom: 15px;
+      }
+  
+      .biodata-box .skills {
+        margin-top: 20px;
+      }
+  
+      .profile-picture {
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #00fff7;
+        box-shadow: 0 0 15px #00fff7;
+        background-size: cover;
+        background-position: center;
+      }
+  
+      @keyframes hologlow {
+        0% { text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7; }
+        50% { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ccff; }
+        100% { text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7; }
+      }
+  
+      .biodata-box h1, .navbar a {
+        animation: hologlow 2s infinite;
+      }
+  
+      .glitch {
+        animation: glitch-flicker 0.3s ease-in-out;
+      }
+  
+      @keyframes glitch-flicker {
+        0% { opacity: 1; transform: translateX(0); }
+        20% { opacity: 0.6; transform: translateX(-2px); }
+        40% { opacity: 0.9; transform: translateX(2px); }
+        60% { opacity: 0.3; transform: translateX(-1px); }
+        80% { opacity: 1; transform: translateX(1px); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+    </style>
+  </head>
 <body>
-    <h1> Testing </h1>
+  <div class="navbar">
+    <a href="#">Biodata</a>
+    <a href="artwork.html">Artwork</a>
+  </div>
+
+  <div class="container">
+    <div class="biodata-box">
+      <div class="profile-picture" style="background-image: url('https://i.postimg.cc/jjph97WD/41823010046.jpg');"></div>
+      <h1>Biodata</h1>
+      <div class="item"><strong>Nama:</strong> Reno Ikhmal Maulana</div>
+      <div class="item"><strong>Tanggal Lahir:</strong> 4 September 2004</div>
+      <div class="item"><strong>Status:</strong> Mahasiswa</div>
+      <div class="item"><strong>Jurusan:</strong> Sistem Informasi</div>
+      <div class="item"><strong>Lokasi Kuliah:</strong> Universitas Mercubuana</div>
+
+      <div class="skills">
+        <strong>Skills:</strong>
+        <ul>
+          <li>Programming HTML, CSS, and JavaScript</li>
+          <li>Programming Phyton</li>
+          <li>Digital Art Illustration using Krita and Fire Alpaca</li>
+          <li>Video Editing using Capcut and Kinemaster</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
