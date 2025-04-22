@@ -48,7 +48,7 @@
         box-shadow: 0 0 20px #00fff7;
         padding: 40px;
         border-radius: 16px;
-        width: 600px;
+        width: 1600px;
         position: relative;
       }
   
@@ -69,36 +69,29 @@
       .profile-picture {
         position: absolute;
         top: -60px;
-        right: -60px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
+        right: 60px;
+        width: 200px;
+        height: 200px;
+        border-radius: 30%;
         border: 3px solid #00fff7;
         box-shadow: 0 0 15px #00fff7;
         background-size: cover;
         background-position: center;
       }
   
-      @keyframes hologlow {
-        0% { text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7; }
-        50% { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ccff; }
-        100% { text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7; }
-      }
-  
       .biodata-box h1, .navbar a {
         animation: hologlow 2s infinite;
       }
   
-      .glitch {
-        animation: glitch-flicker 0.3s ease-in-out;
+      .glitch, .item, .skills {
+        animation: glitch-flicker 2s infinite;
       }
   
       @keyframes glitch-flicker {
-        0% { opacity: 1; transform: translateX(0); }
-        20% { opacity: 0.6; transform: translateX(-2px); }
-        40% { opacity: 0.9; transform: translateX(2px); }
-        60% { opacity: 0.3; transform: translateX(-1px); }
-        80% { opacity: 1; transform: translateX(1px); }
+        0%, 60% { opacity: 1; transform: translateX(0); }
+        70% { opacity: 0.6; transform: translateX(-2px); }
+        75% { opacity: 0.9; transform: translateX(2px); }
+        80% { opacity: 0.3; transform: translateX(-1px); }
         100% { opacity: 1; transform: translateX(0); }
       }
     </style>
